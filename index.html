@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu példa</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-button" onclick="toggleSidebar()">&#9776;</div>
+        <div class="empty-div"></div>
+        <div class="profile-icon">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="Profilkép">
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="search-bar">
+            <input type="text" placeholder="Keresés...">
+        </div>
+        <div class="slider-bar">
+            <input type="range" min="0" max="100" value="50">
+        </div>
+        <div class="select-list">
+            <select>
+                <option value="1">Fajta 1</option>
+                <option value="2">Fajta 2</option>
+                <option value="3">Fajta 3</option>
+            </select>
+        </div>
+        <div class="date-picker">
+            <input type="date">
+            <input type="date">
+        </div>
+    </div>
+
+    <div class="content-block">
+        <div class="content-title">Új poszt</div>
+        <div class="text-input-block">
+            <textarea placeholder="Írj valamit..."></textarea>
+        </div>
+        <button class="post-button">Poszt</button>
+        <button class="add-button">Hozzáadás</button>
+    </div>
+
+    <div class="post-section">
+        <div class="user-info">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="Profilkép">
+            <div class="user-details">
+                <div class="user-name">Felhasználó Neve</div>
+            </div>
+        </div>
+        <div class="user-description">Leírás...</div>
+        <img class="post-image" src="https://likebalaton.hu/wp-content/uploads/2018/07/+otf/1200x630/puppy19033131920.jpg" alt="Poszt kép">
+        <div class="post-footer">
+            <a href="#">Bővebben</a>
+        </div>
+    </div>
+
+    <div class="post-section">
+        <div class="user-info">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="Profilkép">
+            <div class="user-details">
+                <div class="user-name">Felhasználó Neve</div>
+            </div>
+        </div>
+        <div class="user-description">Leírás...</div>
+        <img class="post-image" src="https://perfectbaby.hu/img/31409/BRM008885/500x500/Kutyas-takaro-100x140-cm-Francia-Bulldog.webp?time=1645523641" alt="Poszt kép">
+        <div class="post-footer">
+            <a href="#">Bővebben</a>
+        </div>
+    </div>
+    
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
